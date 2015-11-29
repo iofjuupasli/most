@@ -1,0 +1,47 @@
+{
+  "name": "most",
+  "version": "0.16.0",
+  "description": "Monadic streams",
+  "main": "most.js",
+  "files": [
+	"most.js", "lib/**/*.js"
+  ],
+  "scripts": {
+    "test": "jshint . && buster-test",
+    "build": "webpack --output-library most --output-library-target umd ./most.js --output-file dist/most.js && uglifyjs dist/most.js -c 'warnings=false' -m -o dist/most.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cujojs/most"
+  },
+  "keywords": [
+    "reactive",
+    "reactive programming",
+    "reactive streams",
+    "stream",
+    "streams",
+    "event stream",
+    "promise",
+    "promises",
+    "promises-aplus",
+    "fantasy-land",
+    "monad",
+    "monadic",
+    "functional",
+    "async",
+    "cujojs",
+    "cujo"
+  ],
+  "author": "brian@hovercraftstudios.com",
+  "license": "MIT",
+  "devDependencies": {
+    "buster": "~0.7",
+    "jshint": "~2",
+    "transducers-js": "^0.4.158",
+    "uglify-js": "^2.4.23",
+    "webpack": "^1.10.1"
+  },
+  "dependencies": {
+    "when": "^3.7.0"
+  }
+}
