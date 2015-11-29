@@ -1,9 +1,0 @@
-/test/
-.jshintrc
-.jshintignore
-.editorconfig
-.npmignore
-.idea/
-experiments/
-examples/
-bower_components/
